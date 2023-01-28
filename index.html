@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    <body>
+    <div id="principal">
+        
+       <div>
+            <div>
+                <input id="entrada" class="entrada_div" type="text" disabled="disable" value="0">
+            </div>
+       </div>
+
+       <div>
+
+        <div>
+            <div id="valores">
+
+                <div>
+                    <input id="limpar" onclick="limpar()" onmouseout="voltaCor('limpar')" onmouseover="mudaCor('limpar')" class="valores-num" type="button" value="AC">
+                    <input id="apagar" onclick="apagar()" onmouseout="voltaCor('apagar')" onmouseover="mudaCor('apagar')" class="valores-num" type="button" value="C">
+                    <input id="div" onclick="calcular('div')" onmouseout="voltaCor('div')" onmouseover="mudaCor('div')" class="valores-num" type="button" value="/">
+                    
+                </div>
+                
+                <div>
+                    <input id="7" onclick="digitar('7')" onmouseout="voltaCor('7')" onmouseover="mudaCor('7')" class="valores-num" type="button" value="7">
+                    <input id="8" onclick="digitar('8')" onmouseout="voltaCor('8')" onmouseover="mudaCor('8')" class="valores-num" type="button" value="8">
+                    <input id="9" onclick="digitar('9')" onmouseout="voltaCor('9')" onmouseover="mudaCor('9')" class="valores-num" type="button" value="9">
+                    <input id="mult" onclick="calcular('mult')" onmouseout="voltaCor('mult')" onmouseover="mudaCor('mult')" class="valores-num" type="button" value="*">
+                </div>
+
+                <div>
+                    <input id="6" onclick="digitar('6')" onmouseout="voltaCor('6')" onmouseover="mudaCor('6')" class="valores-num" type="button" value="6">
+                    <input id="5" onclick="digitar('5')" onmouseout="voltaCor('5')" onmouseover="mudaCor('5')" class="valores-num" type="button" value="5">
+                    <input id="4" onclick="digitar('4')" onmouseout="voltaCor('4')" onmouseover="mudaCor('4')" class="valores-num" type="button" value="4">
+                    <input id="menos" onclick="calcular('menos')" onmouseout="voltaCor('menos')" onmouseover="mudaCor('menos')" id="menos" class="valores-num" type="button" value="-">
+                </div>
+
+                <div>
+                    <input id="3" onclick="digitar('3')" onmouseout="voltaCor('3')" onmouseover="mudaCor('3')" class="valores-num" type="button" value="3">
+                    <input id="2" onclick="digitar('2')" onmouseout="voltaCor('2')" onmouseover="mudaCor('2')" class="valores-num" type="button" value="2">
+                    <input id="1" onclick="digitar('1')" onmouseout="voltaCor('1')" onmouseover="mudaCor('1')" class="valores-num" type="button" value="1">
+                    <input id="soma" onclick="calcular('soma')" onmouseout="voltaCor('soma')" onmouseover="mudaCor('soma')" class="valores-num" type="button" value="+">
+                    <input id="zero" onclick="digitar('zero')" onmouseout="voltaCor('zero')" onmouseover="mudaCor('zero')" class="valores-num" type="button" value="0">
+                    <input id="ponto" onclick="digitar('ponto')" onmouseout="voltaCor('ponto')" onmouseover="mudaCor('ponto')" class="valores-num" type="button" value=".">
+                    <input id="igual" onclick="calcular('=')" onmouseout="voltaCor('igual')" onmouseover="mudaCor('igual')" class="valores-num" type="button" value="=">
+                </div>
+
+            </div>
+
+            <div id="operacoes">
+
+            </div>
+
+       </div>
+
+       </div>
+
+    </div>
+    </body>
+    <script src="scripts.js"></script>
+</html>
